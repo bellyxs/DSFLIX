@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppAdibFlix.Categorias.Aventura">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#191919">
+            <Label Text="TECFLIX" TextColor="Red" FontSize="80" VerticalTextAlignment="Center" HorizontalTextAlignment="Center">
+
+            </Label>
+            <Grid ColumnDefinitions="*" RowDefinitions="*" BackgroundColor="#191919">
+                <ImageButton x:Name="btnEternos" Grid.Row="0" Grid.Column="0"  Clicked="btnEternos_Clicked" Aspect="AspectFill" HeightRequest="900" WidthRequest="900"/>
+                <ImageButton x:Name="btnDoctor" Clicked="btnDoctor_Clicked" Grid.Column="1" Grid.Row="0" Aspect="AspectFill" HeightRequest="900" WidthRequest="900"/>
+                <ImageButton x:Name="btnBatman" Clicked="btnBatman_Clicked" Grid.Column="0" Grid.Row="1" Aspect="AspectFill" HeightRequest="900" WidthRequest="900"/>
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

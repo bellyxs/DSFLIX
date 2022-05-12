@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppAdibFlix.Sinopses.Batman">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BackgroundColor="White">
+                <Grid ColumnDefinitions="*" RowDefinitions="250,50">
+                    <Image x:Name="batman" Grid.Row="2" Grid.Column="1" Aspect="AspectFill" HeightRequest="250" WidthRequest="200"/>
+
+                    <StackLayout Grid.Row="1" Grid.Column="0" BackgroundColor="White">
+                        <Label Text="BATMAN - NÃO RECOMENDADO PARA MENORES DE 12." FontAttributes="Bold" TextColor="Red" FontSize="13"/>
+                        <Label Text="Data de Lançamento: 03/03/2022" FontSize="10" FontAttributes="Bold"/>
+
+                    </StackLayout>
+
+
+                    <Label Grid.Row="2" Grid.ColumnSpan="1" FontSize="12" FontAttributes="Bold" Text="Batman (The Batman, no original) segue o segundo ano de Bruce Wayne (Robert Pattinson) como o herói de Gotham, causando medo nos corações dos criminosos da sombria cidade. Com apenas alguns aliados de confiança - Alfred Pennyworth (Andy Serkis) e o tenente James Gordon (Jeffrey Wright) - entre a rede corrupta de funcionários e figuras importantes do distrito, o vigilante solitário se estabeleceu como a única personificação da vingança entre seus concidadãos. Durante uma de suas investigações, Bruce acaba envolvendo a si mesmo e Gordon em um jogo de gato e rato, ao investigar uma série de maquinações sádicas em uma trilha de pistas enigmáticas estabelecida pelo vilão Charada. Quando o trabalho acaba o levando a descobrir uma onda de corrupção que envolve o nome de sua família, pondo em risco a própria integridade e as memórias que tinha sobre seu pai, Thomas Wayne, as evidências começam a chegar mais perto de casa, precisando, Batman, forjar novos relacionamentos, para assim desmascarar o culpado e fazer justiça ao abuso de poder e à corrupção que há muito tempo assola Gotham City." BackgroundColor="White" TextColor="Black"/>
+                         <WebView x:Name="visualizador"
+                         Grid.ColumnSpan="2"
+                         Source="https://www.youtube.com/watch?v=HJv4LQxbVEA"
+                         Grid.Row="0" Grid.Column="0"
+                         VerticalOptions="FillAndExpand"
+                         BackgroundColor="White"/>
+
+
+
+                </Grid>
+                </StackLayout>
+            </ScrollView>
+        </ContentPage.Content>
+</ContentPage>

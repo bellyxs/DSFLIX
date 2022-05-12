@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppAdibFlix.MainPage">
+
+    <StackLayout>
+
+        <Image x:Name="EtecFlix"/>
+
+       
+        <ScrollView>
+            <StackLayout>
+                <Grid ColumnDefinitions= "*,*"
+                 RowDefinitions = "300, 300, 300" Background="White">
+
+
+                    <ImageButton x:Name="btnEternos" Clicked="btnEternos_Clicked" Grid.Column="0" Grid.Row="0" Aspect="Fill"/>
+                    <ImageButton x:Name="btnDoctor" Clicked="btnDoctor_Clicked" Grid.Column="1" Grid.Row="0" Aspect="Fill"/>
+                    <ImageButton x:Name="btnBatman" Clicked="btnBatman_Clicked" Grid.Column="0" Grid.Row="1" Aspect="Fill"/>
+                    <ImageButton x:Name="btnSpiderman" Clicked="btnSpiderman_Clicked" Grid.Column="1" Grid.Row="1" Aspect="Fill"/>
+                    <ImageButton x:Name="btnRed" Clicked="btnRed_Clicked" Grid.Column="0" Grid.Row="2" Aspect="Fill"/>
+                    <ImageButton x:Name="btnHamilton" Clicked="btnHamilton_Clicked" Grid.Column="0" Grid.Row="2" Aspect="Fill"/>
+                    <ImageButton x:Name="btnHeathers" Clicked="btnHeathers_Clicked" Grid.Column="1" Grid.Row="2" Aspect="Fill"/>
+
+                </Grid>
+             </StackLayout>
+         </ScrollView>
+      </StackLayout>
+  </ContentPage>

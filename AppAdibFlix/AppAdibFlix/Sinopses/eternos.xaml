@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppAdibFlix.Sinopses.eternos">
+    <ContentPage.Content>
+
+        <ScrollView>
+        <StackLayout BackgroundColor="White">
+            <Grid ColumnDefinitions="*" RowDefinitions="250,50">
+                <Image x:Name="poster" Grid.Row="2" Grid.Column="1" Aspect="AspectFill" HeightRequest="250" WidthRequest="200"/>
+
+                <StackLayout Grid.Row="1" Grid.Column="0" BackgroundColor="White">
+                    <Label Text="ETERNOS - NÃO RECOMENDADO PARA MENORES DE 12." FontAttributes="Bold" TextColor="Red" FontSize="13"/>
+                    <Label Text="Data de Lançamento: 04/11/2021" FontSize="10" FontAttributes="Bold"/>
+
+                </StackLayout>
+
+                    <Label Grid.Row="2" Grid.ColumnSpan="1" FontSize="12" FontAttributes="Bold" Text="Eternos são seres super dotados com características como imortalidade e manipulação de energia cósmica, e eles são frutos de experiências fracassadas de seu próprio criador, o Celestial Arishem, desde a criação da Terra há milhões de anos. Destinados a salvar o mundo e a raça humana dos Deviantes, seres também criados pelo Celestial, os Eternos então derrotam tais seres e seguem caminhos diferentes, esperando que seu criador volte com boas novas. Mas após séculos e milênios aguardando ele, o grupo de heróis imortais agora precisa se preparar para uma nova ameaça, e precisam lutar contra os Deviantes novamente para garantir a segurança da humanidade. Muitos conflitos internos podem surgir, entre o amor que sentem pela Terra e a necessidade de protegê-la acima de tudo, e a fé naquilo que está acima deles. Cada um deverá lutar pelo o que acredita, e defender o que for mais importante. Eternos se passa pouco tempo após os acontecimentos de Vingadores: Ultimato (2019), dentro do universo MCU, inspirado nos quadrinhos, em adaptação da Marvel Studios." BackgroundColor="White" TextColor="Black"/>
+                        <WebView x:Name="visualizador"
+                         Grid.ColumnSpan="2"
+                         Source="https://www.youtube.com/watch?v=PJza3ZaFeAU"
+                         Grid.Row="0" Grid.Column="0"
+                         VerticalOptions="FillAndExpand"
+                         BackgroundColor="White"/>
+
+            </Grid>
+        </StackLayout>
+    </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

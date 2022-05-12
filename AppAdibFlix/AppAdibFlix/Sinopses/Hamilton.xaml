@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppAdibFlix.Sinopses.Hamilton">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+
+                <Label Text="HAMILTON THE MUSICAL" FontSize="Title" TextColor="Black"/>
+                <Image x:Name="hamilton" HeightRequest="500" Aspect="Fill"/>
+
+                <Label Text="SINOPSE" FontSize="Title" TextColor="Black"/>
+                <Label Text="Não recomendado para menores de 12 anos." FontSize="Subtitle" TextColor="Black"/>
+                <Label Text="A obra teatral conta a história de Alexander Hamilton, primeiro Secretário do Tesouro estadunidense, desde sua chegado ao país até sua influência sobre a Revolução Americana e a Constituição de 1787, relatando também fatos curiosos sobre sua vida pessoal."/>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
